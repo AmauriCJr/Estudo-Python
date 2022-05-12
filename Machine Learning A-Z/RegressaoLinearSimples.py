@@ -46,3 +46,12 @@ plt.title('Salário X Experiência (Test set)')
 plt.xlabel('Anos de Experiência')
 plt.ylabel('Salário')
 plt.show()
+
+#Making a single prediction (for example the salary of an employee with 12 years of experience)
+
+print(regressor.predict([[12]])) #prevê o valor do salário para 12 anos de experiência
+
+#Getting the final linear regression equation with the values of the coefficients
+
+print(regressor.coef_) #coeficiente angular
+print(regressor.intercept_) #constante
