@@ -23,7 +23,7 @@ print(x_test)
 
 from sklearn.linear_model import LinearRegression #linarregression é a classe
 regressor = LinearRegression() #regressor é um objeto da classe acima
-regressor.fit(x_train, y_train) #encaixa as variaveis de treino no objeto regressor
+regressor.fit(x_train, y_train) #encaixa as variaveis de treino no objeto regressor e treina o modelo
 
 #Predicting the Test set results
 
