@@ -9,7 +9,7 @@ y = dataset.iloc[:, -1].values
 #Train
 
 from sklearn.ensemble import RandomForestRegressor
-regressor = RandomForestRegressor(random_state = 0)
+regressor = RandomForestRegressor(n_estimators = 10, random_state = 0) #n_estimators número de árvores
 regressor.fit(x, y)
 
 #Predict
