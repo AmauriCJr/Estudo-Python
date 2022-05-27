@@ -18,7 +18,7 @@ print(regressor.predict([[6.5]]))
 
 #Plot
 
-x_grid = np.arange(min(x), max(x), 0.1)
+x_grid = np.arange(min(x), max(x), 0.01)
 x_grid = x_grid.reshape((len(x_grid), 1))
 plt.scatter(x, y, color = 'red')
 plt.plot(x_grid, regressor.predict(x_grid), color = 'blue')
